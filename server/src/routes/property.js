@@ -1,0 +1,7 @@
+const express = require('express');
+const router = express.Router();
+const { createProperty } = require('../controllers/property'); 
+
+router.post('/property', createProperty);
+
+module.exports = router;
